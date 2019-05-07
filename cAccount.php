@@ -1,3 +1,4 @@
+
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -18,17 +19,12 @@ $city =mysqli_real_escape_string($link, $_REQUEST['city']);
 $address =mysqli_real_escape_string($link, $_REQUEST['address']);
 $confirmpassword =mysqli_real_escape_string($link, $_REQUEST['confirmpassword']);
 	$phone =mysqli_real_escape_string($link, $_REQUEST['phone']);
-		$usernam2 =mysqli_real_escape_string($link, $_REQUEST['usernam2']);
-	$password2 =mysqli_real_escape_string($link, $_REQUEST['password2']);
 
  
-$sql = " UPDATE register
- SET fname='$first_name', lname ='$last_name', phone = '$phone' , email = '$email' ,confirmpassword = '$confirmpassword',password = '$password', city = '$city' , username = '$usernam' 
- where username = '$usernam2'";
-
-
+// Attempt insert query execution
+$sql = "INSERT INTO register (fname, lname, phone,email, address,confirmpassword,password,city,username) VALUES ('$first_name', '$last_name', '$phone','$email', '$address','$confirmpassword','$password','$city','$usernam')";
 if(mysqli_query($link, $sql)){
-    echo " successfull!.";
+    echo "Registration successfull!. You can now log in.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
@@ -36,3 +32,15 @@ if(mysqli_query($link, $sql)){
 // Close connection
 mysqli_close($link);
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> WELCOME</h1>
+<a href="index2.php" title="Go to W3Schools HTML section">Click here to continue</a>
+
+</body>
+</html>

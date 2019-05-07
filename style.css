@@ -1,0 +1,89 @@
+body
+{
+ background-image: #eeee;
+ background-position: fixed;
+
+}
+#bg{
+	border: 0.5px solid white;
+	  background-image: url("bgl2.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+}
+.bg2{
+	border: 0.5px solid white;
+	  background-image: url("bgl2.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+  height: 625px;
+  
+}
+#frm{
+
+	 border: solid gray 1px;
+	width: 35%;
+	border-radius: 10px;
+	margin: 80px auto;
+	margin-top: 40px;
+	background: white;
+	padding: 50px;
+}
+#frm1{
+
+	 border: solid gray 1px;
+	width: 35%;
+	margin-top: 40px;
+	border-radius: 10px;
+	margin: 80px auto;
+	background: white;
+	padding: 50px;
+
+}
+#btn
+{	
+
+	color: #fff;
+	background: #337ab7;
+	padding: 5px;
+	margin-left: 30%;
+	width: 140%;
+     max-width: 122px;
+     box-sizing: border-box;
+ }
+ #butn
+{
+	color: #fff;
+	background: #337ab7;
+	padding: 5px;
+	margin-left:  15%;
+	 width: 10%;
+     max-width: 110px;
+     box-sizing: border-box;
+ }
+.input
+{
+	 width: 100%;
+     max-width: 180px;
+     box-sizing: border-box;
+}
+#HThree
+{
+	float: center;
+	font color: #eee;
+}
+#form
+{
+	border: solid gray 1px;
+	width: 60%;
+	border-radius: 5px;
+	margin: 100px auto;
+	background: white;
+	padding: 50px;
+	color: black;
+}
+#huh{
+	border: solid red 2px;
+	height: 100px;
+}
